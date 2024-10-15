@@ -33,17 +33,14 @@ const config: Config = {
     },
     extend: {
       colors: {
-        light: "#ffffff",
-        dark: "#000000",
-        gradient: "var(--gradient-color)",
-        primary: "var(--primary-color)",
-        secondary: "var(--secondary-color)",
-        "red-main": "var(--red-color)",
-        "blue-main": "var(--blue-color)",
-      },
-      backgroundImage: {
-        gradient: "linear-gradient(135deg, var(--primary-color), var(--red-color))",
-        "gradient-black": "linear-gradient(135deg, #212329, #22232A)",
+        light: "#F0F0F0",
+        dark: "#1f2326",
+        primary: "#1663f9",
+        "secondary-1": "#F961D8",
+        "secondary-2": "#F5953A#",
+        "secondary-3": "#3DB0E5",
+        "secondary-4": "#FF7999",
+        error: "#FC5230",
       },
     }
   },

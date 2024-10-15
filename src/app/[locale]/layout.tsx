@@ -8,9 +8,9 @@ import "./globals.css";
 import "swiper/css";
 import "swiper/css/pagination";
 
-const font = Poppins({
-  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+const poppins = Poppins({
   subsets: ["latin"],
+  weight: ["400", "500"], // Regular and Medium
 });
 
 export const metadata: Metadata = {
@@ -29,11 +29,11 @@ export default async function RootLayout({
 
   return (
     <html lang={locale}>
-      <body className={`${font.className} antialiased`}>
+      <body className={`${poppins.className} antialiased`}>
         <NextIntlClientProvider messages={messages}>
           <NextUIProvider locale={locale}>
             <NextThemesProvider attribute="class">
-              <main className="w-screen overflow-x-hidden">{children}</main>
+              {children}
             </NextThemesProvider>
           </NextUIProvider>
         </NextIntlClientProvider>

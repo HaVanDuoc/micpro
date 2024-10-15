@@ -2,13 +2,13 @@
 
 import Container from "@/components/common/Container";
 import LinkComponent from "@/components/common/LinkComponent";
-import LogoComponent from "@/components/ui/LogoComponent";
 import { NAV_LINKS } from "@/data/constants";
 import React, { useEffect, useRef, useState } from "react";
 import ButtonIconComponent from "@/components/common/ButtonIconComponent";
 import cn from "@/utils/tailwind-utils";
 import CLOSE from "@/assets/icon/close.svg";
 import OPEN from "@/assets/icon/menu.svg";
+import LogoComponent from "@/components/ui/LogoComponent";
 
 interface NavbarProps {
   hiddenMenu?: "xl" | "lg" | "md" | "sm";
@@ -68,7 +68,7 @@ const NavbarComponent: React.FC<NavbarProps> = ({ hiddenMenu = "md" }) => {
           className={classHiddenMenu}
         />
 
-        <LogoComponent name="Logo" className="mr-auto" />
+        <LogoComponent className="mr-auto" />
 
         <div className={cn("flex items-center flex-wrap gap-5", classHiddenLinks && classHiddenLinks)}>
           {NAV_LINKS.map((nav) => (
@@ -90,7 +90,7 @@ const NavbarComponent: React.FC<NavbarProps> = ({ hiddenMenu = "md" }) => {
         )}
       >
         <div className="flex mb-5">
-          <LogoComponent name="Logo" />
+          <LogoComponent />
           <ButtonIconComponent
             icon={CLOSE}
             className="ml-auto"

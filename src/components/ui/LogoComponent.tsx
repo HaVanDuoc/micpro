@@ -1,34 +1,29 @@
 import utils from "@/utils";
-import Image, { StaticImageData } from "next/image";
-import React, { Fragment } from "react";
+import Image from "next/image";
+import React from "react";
+import LOGO from "@/assets/icon/logo.svg";
+import pathPage from "@/libs/path";
+import Link from "next/link";
+import cn from "@/utils/tailwind-utils";
 
-interface LogoComponentProps {
-  name?: React.ReactNode;
-  img?: StaticImageData;
-  className?: string;
-}
-
-const LogoComponent: React.FC<LogoComponentProps> = ({
-  name,
-  img,
-  className,
-}) => {
+const LogoComponent = ({ className }: { className?: string }) => {
   return (
-    <div className={className}>
-      {name ? (
-        <div className="text-dark uppercase text-3xl font-bold">{name}</div>
-      ) : img ? (
-        <Image
-          src={img?.src}
-          alt={utils.generateRandomAriaLabel("Logo__")}
-          width={img.width}
-          height={img.height}
-          className="w-auto h-full object-cover"
-        />
-      ) : (
-        <Fragment />
+    <Link
+      href={pathPage.home}
+      className={cn(
+        "W-9 flex flex-row items-center gap-3 cursor-pointer",
+        className
       )}
-    </div>
+    >
+      <Image
+        src={LOGO}
+        alt={utils.generateRandomAriaLabel("Logo__")}
+        width={LOGO.width}
+        height={LOGO.height}
+        className="w-auto h-full object-cover"
+      />
+      <div className="text-lg font-bold">MicPro</div>
+    </Link>
   );
 };
 
