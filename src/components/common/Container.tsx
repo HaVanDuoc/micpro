@@ -4,26 +4,24 @@ import React from "react";
 interface ContainerProps extends React.HTMLAttributes<HTMLDivElement> {
   children: React.ReactNode;
   className?: string;
-  padding?: boolean; // dùng cho mobile, khi về mobile container sẽ nhỏ hơn hẳn
-  py?: number;
-  my?: string;
+  marginY?: boolean;
+  gap?: number;
 }
 
 const Container: React.FC<ContainerProps> = ({
   children,
   className = "",
-  my,
-  py = 5,
+  marginY = false,
+  gap = 5,
   ...props
 }) => {
-
   return (
     <section
       {...props}
       className={cn(
-        "container flex flex-col justify-center items-center gap-10",
-        my && "sm:gap-16 my-24",
-        py && `py-${py}`,
+        "container flex flex-col p-5",
+        marginY && "my-10 sm:my-20",
+        gap && `gap-${gap}`,
         className
       )}
     >

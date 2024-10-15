@@ -110,3 +110,89 @@ export const TEAM_WORK_DATA = {
     },
   ],
 };
+
+export const Expertise_DATA = {
+  title: "Explore our core Expertise",
+  sub_title:
+    "We produce beautiful and engaging websites. Our team is mostly experienced in the design of stunning interfaces, e-commerce and marketing website development, ready to work with you on your project!",
+  items: [
+    {
+      id: 1,
+      title: "UI/UX Design",
+      list: [
+        {
+          id: 1,
+          value: "High-quality motion design",
+        },
+        {
+          id: 2,
+          value: "Thoughtful user experience design",
+        },
+        {
+          id: 3,
+          value: "Unique user interface design for websites and apps",
+        },
+        {
+          id: 4,
+          value: "Design concepts & strategies for MVPs",
+        },
+      ],
+    },
+    {
+      id: 2,
+      title: "Webflow Design",
+      list: [
+        {
+          id: 1,
+          value: "High-quality motion design",
+        },
+        {
+          id: 2,
+          value: "Thoughtful user experience design",
+        },
+        {
+          id: 3,
+          value: "Unique user interface design for websites and apps",
+        },
+        {
+          id: 4,
+          value: "Design concepts & strategies for MVPs",
+        },
+      ],
+    },
+    {
+      id: 3,
+      title: "Webflow Developer",
+      list: [
+        {
+          id: 1,
+          value:
+            "Full-cycle development of powerful corporate websites and one-pagers",
+        },
+        {
+          id: 2,
+          value: "Webflow integrations with third-party services and apps",
+        },
+        {
+          id: 3,
+          value:
+            "Migration of your designs or even ready website to Webflow CMS",
+        },
+      ],
+    },
+    {
+      id: 4,
+      title: "Shopify Developer",
+      list: [
+        {
+          id: 1,
+          value: "Cost-effective e-commerce development",
+        },
+        {
+          id: 2,
+          value: "Reinvention of your online store with a strong tech stack",
+        },
+      ],
+    },
+  ],
+};

@@ -1,7 +1,7 @@
-'use client'
+"use client";
 
 import React from "react";
-import NavbarComponent from "../navbar/NavbarComponent";
+import NavbarComponent from "@/components/layout/navbar/NavbarComponent";
 import HeroHomeComponent from "@/components/home/HeroHomeComponent";
 import AgencySection from "@/components/home/AgencySection";
 
