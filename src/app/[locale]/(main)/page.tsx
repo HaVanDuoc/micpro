@@ -1,7 +1,14 @@
+'use client'
+
+import TeamWorkSection from "@/components/home/TeamWorkSection";
 import React from "react";
 
 const HomePage = () => {
-  return <div>HomePage</div>;
+  return (
+    <>
+      <TeamWorkSection />
+    </>
+  );
 };
 
 export default HomePage;

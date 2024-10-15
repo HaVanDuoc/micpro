@@ -12,7 +12,7 @@ type TitleComponentProps = {
     | "sub-heading-1"
     | "sub-heading-2"
     | "sub-heading-3";
-  highlight?: string[]; // Mảng các từ cần áp dụng gradient
+  highlight?: number[]; // Mảng vị trí các từ cần áp dụng gradient
   colorHighlight?: "gradient" | "primary";
   className?: string;
 };
@@ -32,8 +32,9 @@ const TitleComponent: React.FC<TitleComponentProps> = ({
   return (
     <div className={cn("text-center", heading, className)}>
       {words.map((word, index) => {
-        const isHighlighted = highlight.includes(word);
+        const isHighlighted = highlight.includes(index); // Kiểm tra xem chỉ số có trong mảng highlight không
         const bg = colorHighlight === "gradient" ? bgGradient : bgPrimary;
+        
         return (
           <span
             key={index}

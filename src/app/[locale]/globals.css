@@ -77,6 +77,21 @@
         @apply text-sm sm:text-base font-normal;
     }
 
+    .body-1 {
+        @apply text-base sm:text-lg font-normal;
+    }
+
+    .body-2 {
+        @apply text-medium sm:text-base font-normal;
+    }
+
+    .body-3 {
+        @apply text-xs sm:text-sm font-normal;
+    }
+
+    .body-4 {
+        @apply text-[10px] sm:text-xs font-normal;
+    }
 }
 
 @layer utilities {
