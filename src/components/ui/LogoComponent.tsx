@@ -5,6 +5,7 @@ import LOGO from "@/assets/icon/logo.svg";
 import pathPage from "@/libs/path";
 import Link from "next/link";
 import cn from "@/utils/tailwind-utils";
+import TitleComponent from "@/components/common/TitleComponent";
 
 const LogoComponent = ({ className }: { className?: string }) => {
   return (
@@ -22,7 +23,7 @@ const LogoComponent = ({ className }: { className?: string }) => {
         height={LOGO.height}
         className="w-auto h-full object-cover"
       />
-      <div className="text-lg font-bold">MicPro</div>
+      <TitleComponent heading="heading-5" title="MicPro" />
     </Link>
   );
 };

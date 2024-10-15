@@ -4,6 +4,18 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Font Orbitron for Logo */
+@font-face {
+    font-family: 'Sora';
+    src: url('../../assets/fonts/Sora-VariableFont_wght.ttf') format('truetype');
+}
+
+.font-sora {
+    font-family: 'Sora', sans-serif;
+}
+
+/* ------------------------------ */
+
 @layer base {
 
     * {
@@ -21,51 +33,47 @@
         text-rendering: optimizeSpeed;
     }
 
-    p {
-        @apply text-dark text-sm sm:text-base
-    }
-
     .heading-1 {
-        @apply text-4xl sm:text-5xl lg:text-6xl font-extrabold;
+        @apply text-4xl sm:text-5xl lg:text-6xl font-sora font-extrabold;
     }
 
     .heading-2 {
-        @apply text-3xl sm:text-4xl lg:text-5xl font-bold;
+        @apply text-3xl sm:text-4xl lg:text-5xl font-sora font-bold;
     }
 
     .heading-3 {
-        @apply text-2xl sm:text-3xl lg:text-4xl font-bold;
+        @apply text-2xl sm:text-3xl lg:text-4xl font-sora font-bold;
     }
 
     .heading-4 {
-        @apply text-xl sm:text-2xl lg:text-3xl font-bold;
+        @apply text-xl sm:text-2xl lg:text-3xl font-sora font-bold;
     }
 
     .heading-5 {
-        @apply text-lg sm:text-xl lg:text-2xl font-bold;
+        @apply text-lg sm:text-xl lg:text-2xl font-sora font-bold;
     }
 
     .sub-heading-1 {
-        @apply text-medium sm:text-lg font-semibold
+        @apply text-medium sm:text-lg font-sora font-semibold
     }
 
     .sub-heading-2 {
-        @apply text-sm sm:text-base font-medium
+        @apply text-sm sm:text-base font-sora font-medium
     }
 
     .sub-heading-3 {
-        @apply text-sm sm:text-base font-medium
+        @apply text-sm sm:text-base font-sora font-medium
     }
 
-    .paragraph-1 {
+    .para-1 {
         @apply text-lg sm:text-xl font-normal;
     }
 
-    .paragraph-2 {
+    .para-2 {
         @apply text-medium sm:text-lg font-normal;
     }
 
-    .paragraph-3 {
+    .para-3 {
         @apply text-sm sm:text-base font-normal;
     }
 

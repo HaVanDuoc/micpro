@@ -16,19 +16,34 @@ export const ItemCard: React.FC<ItemCardProps> = ({ className, ...props }) => {
   );
 };
 
-const ListComponent = ({ cols = 4 }: { cols: number }) => {
+const ListComponent = ({
+  cols = 4,
+  array = [],
+  itemComponent,
+  className,
+}: {
+  cols: number;
+  array: [];
+  itemComponent: React.ReactNode;
+  className?: string;
+}) => {
   return (
     <div
-      className={cn("grid gap-4", `grid-cols-${cols}`, {
-        "sm:grid-cols-1": cols >= 1,
-        "md:grid-cols-2": cols >= 2,
-        "lg:grid-cols-3": cols >= 3,
-        "xl:grid-cols-4": cols >= 4,
-      })}
+      className={cn(
+        "grid gap-4",
+        `grid-cols-${cols}`,
+        {
+          "sm:grid-cols-1": cols >= 1,
+          "md:grid-cols-2": cols >= 2,
+          "lg:grid-cols-3": cols >= 3,
+          "xl:grid-cols-4": cols >= 4,
+        },
+        className
+      )}
     >
-      {Array.from({ length: 20 }).map((_, index) => (
+      {array.map((item, index) => (
         <div key={index}>
-          <ItemCard />
+          {itemComponent}
         </div>
       ))}
     </div>

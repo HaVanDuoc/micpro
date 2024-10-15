@@ -1,0 +1,38 @@
+import React from "react";
+import { AGENCY_DATA } from "@/data/home";
+import TitleComponent from "../common/TitleComponent";
+
+const AgencySection = () => {
+  return (
+    <section className="px-5 sm:px-0 py-5">
+      <div className="container sm:py-16 sm:px-14 rounded-3xl bg-white overflow-hidden space-y-10">
+        <div className="container sm:mb-10 w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 p-10">
+          {AGENCY_DATA.top.map((item) => (
+            <div className="space-y-5 p-5 w-[240px]" key={item.id}>
+              {item.icon}
+              <p className="sub-heading-1">{item.name}</p>
+            </div>
+          ))}
+        </div>
+
+        <TitleComponent
+          heading="heading-1"
+          title="More than 80,000+ companies trust Micpro"
+          highlight={["80,000+"]}
+          colorHighlight="primary"
+          className="px-0 sm:px-10 lg:px-20"
+        />
+
+        <div className="w-full flex flex-row flex-wrap justify-center lg:justify-between items-center gap-7">
+          {AGENCY_DATA.brand.map((brand) => (
+            <div key={brand.id} className="h-[30px]">
+              {brand.brand}
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default AgencySection;

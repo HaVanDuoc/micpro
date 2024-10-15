@@ -1,7 +1,7 @@
-'use client'
+"use client";
 
 import FooterComponent from "@/components/layout/footer/FooterComponent";
-import NavbarComponent from "@/components/layout/navbar/NavbarComponent";
+import HeaderContainer from "@/components/layout/header/HeaderContainer";
 import FloatingContainer from "@/components/ui/floating/FloatingContainer";
 import UpToTopComponent from "@/components/ui/floating/UpTopTopComponent";
 
@@ -15,7 +15,7 @@ export default function MainLayout({
   return (
     <div>
       <FloatingContainer items={items} />
-      <NavbarComponent />
+      <HeaderContainer />
       <main>{children}</main>
       <FooterComponent />
     </div>

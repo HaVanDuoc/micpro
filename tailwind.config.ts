@@ -42,6 +42,7 @@ const config: Config = {
         "secondary-4": "#FF7999",
         error: "#FC5230",
       },
+
     }
   },
   darkMode: "class",

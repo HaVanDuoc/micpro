@@ -9,6 +9,8 @@ import cn from "@/utils/tailwind-utils";
 import CLOSE from "@/assets/icon/close.svg";
 import OPEN from "@/assets/icon/menu.svg";
 import LogoComponent from "@/components/ui/LogoComponent";
+import { Button } from "@nextui-org/react";
+import TitleComponent from "@/components/common/TitleComponent";
 
 interface NavbarProps {
   hiddenMenu?: "xl" | "lg" | "md" | "sm";
@@ -61,6 +63,8 @@ const NavbarComponent: React.FC<NavbarProps> = ({ hiddenMenu = "md" }) => {
   return (
     <nav className="flex">
       <Container className="flex flex-row items-center">
+        <LogoComponent className="mr-auto" />
+
         <ButtonIconComponent
           icon={OPEN}
           onClick={toggle}
@@ -68,17 +72,26 @@ const NavbarComponent: React.FC<NavbarProps> = ({ hiddenMenu = "md" }) => {
           className={classHiddenMenu}
         />
 
-        <LogoComponent className="mr-auto" />
-
-        <div className={cn("flex items-center flex-wrap gap-5", classHiddenLinks && classHiddenLinks)}>
+        <div
+          className={cn(
+            "flex items-center flex-wrap gap-10",
+            classHiddenLinks && classHiddenLinks
+          )}
+        >
           {NAV_LINKS.map((nav) => (
             <div key={nav.id}>
-              <LinkComponent href={nav.href}>{nav.name}</LinkComponent>
+              <LinkComponent href={nav.href}>
+                <TitleComponent title={nav.name} heading="sub-heading-2" />
+              </LinkComponent>
             </div>
           ))}
         </div>
 
-        <div className="ml-auto">Items</div>
+        <div className="ml-auto hidden lg:flex">
+          <Button className="py-6 px-10 bg-primary rounded-full text-light flex !sub-heading-2">
+            Start a Project
+          </Button>
+        </div>
       </Container>
 
       {/* Sidebar Menu */}
@@ -101,12 +114,18 @@ const NavbarComponent: React.FC<NavbarProps> = ({ hiddenMenu = "md" }) => {
         <div className="flex flex-col justify-center items-center gap-5">
           {NAV_LINKS.map((nav) => (
             <div key={nav.id}>
-              <LinkComponent href={nav.href}>{nav.name}</LinkComponent>
+              <LinkComponent href={nav.href}>
+                <TitleComponent title={nav.name} heading="sub-heading-2" />
+              </LinkComponent>
             </div>
           ))}
         </div>
 
-        <div className="mt-5">Items menu</div>
+        <div className="mt-5 flex flex-col justify-center w-full">
+          <Button className="py-6 px-10 bg-primary rounded-full text-light flex !sub-heading-2">
+            Start a Project
+          </Button>
+        </div>
       </aside>
     </nav>
   );
