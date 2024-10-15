@@ -1,3 +1,5 @@
+'use client'
+
 import React from "react";
 import NavbarComponent from "../navbar/NavbarComponent";
 import HeroHomeComponent from "@/components/home/HeroHomeComponent";

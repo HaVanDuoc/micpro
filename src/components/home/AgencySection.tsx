@@ -1,6 +1,36 @@
 import React from "react";
 import { AGENCY_DATA } from "@/data/home";
 import TitleComponent from "../common/TitleComponent";
+import { motion } from "framer-motion";
+
+const Ticker = () => {
+  const brands = AGENCY_DATA.brand;
+
+  // Nhân đôi danh sách để tạo ticker liên tục
+  const repeatedBrands = [...brands, ...brands, ...brands];
+
+  return (
+    <div className="w-full overflow-hidden">
+      <motion.div
+        className="flex flex-row gap-7"
+        animate={{
+          x: ["0%", "-100%"], // Di chuyển từ 0% đến -100%
+        }}
+        transition={{
+          ease: "linear", // Chạy tuyến tính không giật
+          duration: 20, // Thời gian di chuyển (điều chỉnh tốc độ)
+          repeat: Infinity, // Lặp lại mãi mãi
+        }}
+      >
+        {repeatedBrands.map((brand, index) => (
+          <div key={index} className="h-[30px] flex-shrink-0">
+            {brand.brand}
+          </div>
+        ))}
+      </motion.div>
+    </div>
+  );
+};
 
 const AgencySection = () => {
   return (
@@ -23,12 +53,8 @@ const AgencySection = () => {
           className="px-0 sm:px-10 lg:px-20"
         />
 
-        <div className="w-full flex flex-row flex-wrap justify-center lg:justify-between items-center gap-7">
-          {AGENCY_DATA.brand.map((brand) => (
-            <div key={brand.id} className="h-[30px]">
-              {brand.brand}
-            </div>
-          ))}
+        <div className="w-full">
+          <Ticker />
         </div>
       </div>
     </section>
