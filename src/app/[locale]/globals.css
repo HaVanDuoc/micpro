@@ -25,24 +25,48 @@
         @apply text-dark text-sm sm:text-base
     }
 
-    h1 {
+    .heading-1 {
         @apply text-4xl sm:text-5xl lg:text-6xl font-extrabold;
     }
 
-    h2 {
+    .heading-2 {
         @apply text-3xl sm:text-4xl lg:text-5xl font-bold;
     }
 
-    h3 {
+    .heading-3 {
         @apply text-2xl sm:text-3xl lg:text-4xl font-bold;
     }
 
-    h4 {
+    .heading-4 {
         @apply text-xl sm:text-2xl lg:text-3xl font-bold;
     }
 
-    h5 {
+    .heading-5 {
         @apply text-lg sm:text-xl lg:text-2xl font-bold;
+    }
+
+    .sub-heading-1 {
+        @apply text-medium sm:text-lg font-semibold
+    }
+
+    .sub-heading-2 {
+        @apply text-sm sm:text-base font-medium
+    }
+
+    .sub-heading-3 {
+        @apply text-sm sm:text-base font-medium
+    }
+
+    .paragraph-1 {
+        @apply text-lg sm:text-xl font-normal;
+    }
+
+    .paragraph-2 {
+        @apply text-medium sm:text-lg font-normal;
+    }
+
+    .paragraph-3 {
+        @apply text-sm sm:text-base font-normal;
     }
 
 }
