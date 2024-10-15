@@ -14,8 +14,8 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Next App Boilerplate",
-  description: "Boilerplate using NextJs",
+  title: "MicPro",
+  description: "Micro website",
 };
 
 export default async function RootLayout({

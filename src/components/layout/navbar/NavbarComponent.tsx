@@ -61,7 +61,7 @@ const NavbarComponent: React.FC<NavbarProps> = ({ hiddenMenu = "md" }) => {
   }, []);
 
   return (
-    <nav className="flex">
+    <nav className="flex w-full">
       <Container className="flex flex-row items-center">
         <LogoComponent className="mr-auto" />
 
@@ -98,7 +98,7 @@ const NavbarComponent: React.FC<NavbarProps> = ({ hiddenMenu = "md" }) => {
       <aside
         ref={containerRef}
         className={cn(
-          "p-5 absolute top-0 left-0 bg-light w-full h-screen max-w-screen-xs animation",
+          "p-5 absolute top-0 left-0 bg-white w-full h-screen max-w-screen-xs animation z-[99] overflow-y-auto",
           open ? "translate-x-0 shadow-2xl" : "translate-x-[-100%]"
         )}
       >
