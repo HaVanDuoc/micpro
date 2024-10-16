@@ -20,6 +20,36 @@ import MEMBER_3 from "@/assets/home/member (3).png";
 import MEMBER_4 from "@/assets/home/member (4).png";
 import MEMBER_5 from "@/assets/home/member (5).png";
 import MEMBER_6 from "@/assets/home/member (6).png";
+import BLOG_1 from "@/assets/home/blog (1).png";
+import BLOG_2 from "@/assets/home/blog (2).png";
+import BLOG_3 from "@/assets/home/blog (3).png";
+
+export const BLOG_DATA = {
+  title: "OUR Design BLOG",
+  blogs: [
+    {
+      id: 1,
+      name: "15 Important Usability Principles for User Interface Design",
+      img: BLOG_1,
+      type: "Design Blog",
+      createdAt: "Jul 12, 2022",
+    },
+    {
+      id: 2,
+      name: "15 Important Usability Principles for User Interface Design",
+      img: BLOG_2,
+      type: "Design Blog",
+      createdAt: "Jul 30, 2022",
+    },
+    {
+      id: 3,
+      name: "15 Important Usability Principles for User Interface Design",
+      img: BLOG_3,
+      type: "Design Blog",
+      createdAt: "Jul 22, 2022",
+    },
+  ],
+};
 
 export const CreativeTeam_DATA = {
   title: "Our Creative Team",
