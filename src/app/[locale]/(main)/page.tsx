@@ -1,6 +1,7 @@
 "use client";
 
 import BudgetSection from "@/components/home/BudgetSection";
+import CreativeTeamSection from "@/components/home/CreativeTeamSection";
 import ExpertiseSection from "@/components/home/ExpertiseSection";
 import QuotesSection from "@/components/home/QuotesSection";
 import TeamWorkSection from "@/components/home/TeamWorkSection";
@@ -13,6 +14,7 @@ const HomePage = () => {
       <ExpertiseSection />
       <BudgetSection />
       <QuotesSection />
+      <CreativeTeamSection />
     </>
   );
 };

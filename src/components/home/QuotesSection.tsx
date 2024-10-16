@@ -6,6 +6,7 @@ import { ImQuotesLeft } from "react-icons/im";
 import { Avatar } from "@nextui-org/react";
 import SwiperComponent from "@/components/common/SwiperComponent";
 import { QUOTES_DATA } from "@/data/home";
+import AnimationFadeUpComponent from "@/components/animation/AnimationFadeUpComponent";
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 const QuotesItem = ({ data }: { data: any }) => {
@@ -40,20 +41,22 @@ const QuotesSection = () => {
   const { items } = QUOTES_DATA;
 
   return (
-    <Container>
-      <SwiperComponent
-        data={items}
-        isAutoPlay
-        isPagination
-        breakpoints={{
-          320: {
-            slidesPerView: 1,
-          },
-        }}
-      >
-        {(item: unknown) => <QuotesItem data={item} />}
-      </SwiperComponent>
-    </Container>
+    <AnimationFadeUpComponent>
+      <Container marginY>
+        <SwiperComponent
+          data={items}
+          isAutoPlay
+          isPagination
+          breakpoints={{
+            320: {
+              slidesPerView: 1,
+            },
+          }}
+        >
+          {(item: unknown) => <QuotesItem data={item} />}
+        </SwiperComponent>
+      </Container>
+    </AnimationFadeUpComponent>
   );
 };
 

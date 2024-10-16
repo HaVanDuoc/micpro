@@ -14,6 +14,26 @@ import IMAGE_2 from "@/assets/home/Frame 494 1.png";
 import IMAGE_3 from "@/assets/home/Frame 495 1.png";
 import IMAGE_4 from "@/assets/home/Frame 496 1.png";
 import AVT from "@/assets/home/man-smiling-with-arms-crossed-removebg 2.png";
+import MEMBER_1 from "@/assets/home/member (1).png";
+import MEMBER_2 from "@/assets/home/member (2).png";
+import MEMBER_3 from "@/assets/home/member (3).png";
+import MEMBER_4 from "@/assets/home/member (4).png";
+import MEMBER_5 from "@/assets/home/member (5).png";
+import MEMBER_6 from "@/assets/home/member (6).png";
+
+export const CreativeTeam_DATA = {
+  title: "Our Creative Team",
+  description:
+    "Flowgiri is a creative and modern theme for startups, freelancers and creatives.",
+  members: [
+    { id: 1, name: "STEVE THOMAS", job: "WEB DEVELOPER", img: MEMBER_1 },
+    { id: 2, name: "JANE DOE", job: "UI/UX DESIGNER", img: MEMBER_2 },
+    { id: 3, name: "JOHN SMITH", job: "FRONTEND DEVELOPER", img: MEMBER_3 },
+    { id: 4, name: "EMMA JOHNSON", job: "BACKEND DEVELOPER", img: MEMBER_4 },
+    { id: 5, name: "OLIVER BROWN", job: "FULL STACK DEVELOPER", img: MEMBER_5 },
+    { id: 6, name: "SOPHIA DAVIS", job: "PROJECT MANAGER", img: MEMBER_6 },
+  ],
+};
 
 export const HERO_DATA = {
   heading: "Build Your Dream Website with Our Skilled Development Team",
