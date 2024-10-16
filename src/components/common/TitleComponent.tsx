@@ -14,6 +14,7 @@ type TitleComponentProps = {
     | "sub-heading-3";
   highlight?: number[]; // Mảng vị trí các từ cần áp dụng gradient
   colorHighlight?: "gradient" | "primary";
+  breakLineAt?: number[];
   className?: string;
 };
 
@@ -22,6 +23,7 @@ const TitleComponent: React.FC<TitleComponentProps> = ({
   heading,
   highlight = [],
   colorHighlight = "gradient",
+  breakLineAt = [], // Mặc định không có ngắt dòng
   className = "",
 }) => {
   // Tách các từ trong tiêu đề
@@ -34,7 +36,7 @@ const TitleComponent: React.FC<TitleComponentProps> = ({
       {words.map((word, index) => {
         const isHighlighted = highlight.includes(index); // Kiểm tra xem chỉ số có trong mảng highlight không
         const bg = colorHighlight === "gradient" ? bgGradient : bgPrimary;
-        
+
         return (
           <span
             key={index}
@@ -42,7 +44,8 @@ const TitleComponent: React.FC<TitleComponentProps> = ({
               isHighlighted && `${bg} bg-clip-text text-transparent`
             )}
           >
-            {word}{" "}
+            <span>{word}</span>
+            {breakLineAt.includes(index) ? <br /> : " "}
           </span>
         );
       })}

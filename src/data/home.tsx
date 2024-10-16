@@ -196,3 +196,115 @@ export const Expertise_DATA = {
     },
   ],
 };
+
+export const BUDGET_DATA = {
+  title: "Find the plan that fits your budget",
+  budgets: [
+    {
+      name: "Monthly",
+      items: [
+        {
+          id: 1,
+          class: "Pro",
+          type: "Most popular",
+          price: 35,
+          providers: [
+            {
+              id: 1,
+              value: "UI/UX Designer",
+            },
+            {
+              id: 2,
+              value: "Project Manager",
+            },
+            {
+              id: 3,
+              value: "Dedicated Developer",
+            },
+            {
+              id: 4,
+              value: "On time Support",
+            },
+            {
+              id: 5,
+              value: "QA technician",
+            },
+          ],
+        },
+        {
+          id: 2,
+          class: "Pro",
+          type: "Free",
+          price: 0,
+          providers: [
+            {
+              id: 1,
+              value: "UI/UX Designer",
+            },
+            {
+              id: 2,
+              value: "Dedicated Developer",
+            },
+            {
+              id: 3,
+              value: "QA technician",
+            },
+          ],
+        },
+      ],
+    },
+    {
+      name: "Yearly",
+      items: [
+        {
+          id: 1,
+          class: "Pro",
+          type: "Most popular",
+          price: 199,
+          providers: [
+            {
+              id: 1,
+              value: "UI/UX Designer",
+            },
+            {
+              id: 2,
+              value: "Project Manager",
+            },
+            {
+              id: 3,
+              value: "Dedicated Developer",
+            },
+            {
+              id: 4,
+              value: "On time Support",
+            },
+            {
+              id: 5,
+              value: "QA technician",
+            },
+          ],
+        },
+        {
+          id: 2,
+          class: "Pro",
+          type: "Free",
+          price: 0,
+          providers: [
+            {
+              id: 1,
+              value: "UI/UX Designer",
+            },
+            {
+              id: 2,
+              value: "Dedicated Developer",
+            },
+            {
+              id: 3,
+              value: "QA technician",
+            },
+          ],
+        },
+      ],
+    },
+  ],
+};
