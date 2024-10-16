@@ -13,6 +13,7 @@ import IMAGE_1 from "@/assets/home/Frame 490 1.png";
 import IMAGE_2 from "@/assets/home/Frame 494 1.png";
 import IMAGE_3 from "@/assets/home/Frame 495 1.png";
 import IMAGE_4 from "@/assets/home/Frame 496 1.png";
+import AVT from "@/assets/home/man-smiling-with-arms-crossed-removebg 2.png";
 
 export const HERO_DATA = {
   heading: "Build Your Dream Website with Our Skilled Development Team",
@@ -305,6 +306,52 @@ export const BUDGET_DATA = {
           ],
         },
       ],
+    },
+  ],
+};
+
+export const QUOTES_DATA = {
+  name: "Quotes",
+  items: [
+    {
+      id: 1,
+      user: "Mitchell Marsh",
+      job: "UI/UX Designer",
+      avt: AVT.src,
+      content:
+        "Internal stakeholders were happy with the final product. The team was able to communicate their progress clearly and concisely. They took the initiative and executed the project without much supervision Internal stakeholders were happy with the final product. The team   able to communicate their progress clearly and concisely. They took the initiative and executed the project without much supervision",
+    },
+    {
+      id: 2,
+      user: "Mitchell Marsh",
+      job: "UI/UX Designer",
+      avt: AVT.src,
+      content:
+        "Internal stakeholders were happy with the final product. The team was able to communicate their progress clearly and concisely. They took the initiative and executed the project without much supervision Internal stakeholders were happy with the final product. The team   able to communicate their progress clearly and concisely. They took the initiative and executed the project without much supervision",
+    },
+    {
+      id: 3,
+      user: "Mitchell Marsh",
+      job: "UI/UX Designer",
+      avt: AVT.src,
+      content:
+        "Internal stakeholders were happy with the final product. The team was able to communicate their progress clearly and concisely. They took the initiative and executed the project without much supervision Internal stakeholders were happy with the final product. The team   able to communicate their progress clearly and concisely. They took the initiative and executed the project without much supervision",
+    },
+    {
+      id: 4,
+      user: "Mitchell Marsh",
+      job: "UI/UX Designer",
+      avt: AVT.src,
+      content:
+        "Internal stakeholders were happy with the final product. The team was able to communicate their progress clearly and concisely. They took the initiative and executed the project without much supervision Internal stakeholders were happy with the final product. The team   able to communicate their progress clearly and concisely. They took the initiative and executed the project without much supervision",
+    },
+    {
+      id: 5,
+      user: "Mitchell Marsh",
+      job: "UI/UX Designer",
+      avt: AVT.src,
+      content:
+        "Internal stakeholders were happy with the final product. The team was able to communicate their progress clearly and concisely. They took the initiative and executed the project without much supervision Internal stakeholders were happy with the final product. The team   able to communicate their progress clearly and concisely. They took the initiative and executed the project without much supervision",
     },
   ],
 };
