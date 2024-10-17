@@ -33,6 +33,10 @@
         text-rendering: optimizeSpeed;
     }
 
+    .dark-1 {
+        @apply text-[#81879D]
+    }
+
     .heading-1 {
         @apply text-4xl sm:text-5xl lg:text-6xl font-sora font-extrabold;
     }

@@ -1,5 +1,4 @@
-import FooterComponent from "@/components/layout/footer/FooterComponent";
-import HeaderContainer from "@/components/layout/header/HeaderContainer";
+import FooterComponent from "@/components/layout/FooterComponent";
 import FloatingContainer from "@/components/ui/floating/FloatingContainer";
 import UpToTopComponent from "@/components/ui/floating/UpTopTopComponent";
 
@@ -13,8 +12,7 @@ export default function MainLayout({
   return (
     <div>
       <FloatingContainer items={items} />
-      <HeaderContainer />
-      <main>{children}</main>
+      {children}
       <FooterComponent />
     </div>
   );
