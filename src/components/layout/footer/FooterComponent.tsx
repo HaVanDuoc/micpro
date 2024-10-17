@@ -79,10 +79,10 @@ const FooterComponent = () => {
             </div>
           ))}
 
-          <div className="space-y-8">
+          <div className="space-y-8 flex-1">
             <h3 className="sub-heading-2">Subscribe</h3>
 
-            <form className="flex flex-row items-center justify-center h-12 rounded-md overflow-hidden border border-gray-300">
+            <form className="w-fit flex flex-row items-center justify-center h-12 rounded-md overflow-hidden border border-gray-300">
               <input
                 placeholder="Email address"
                 className="h-full border-none outline-none px-5"
