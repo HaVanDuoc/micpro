@@ -85,7 +85,7 @@ const FooterComponent = () => {
             <form className="flex flex-row items-center justify-center h-12 rounded-md overflow-hidden border border-gray-300">
               <input
                 placeholder="Email address"
-                className="h-full w-auto border-none outline-none px-5"
+                className="h-full border-none outline-none px-5"
               />
               <button className="h-full px-5 text-light bg-[#7751F7]">
                 <FaArrowRight />
