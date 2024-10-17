@@ -24,6 +24,13 @@ import BLOG_1 from "@/assets/home/blog (1).png";
 import BLOG_2 from "@/assets/home/blog (2).png";
 import BLOG_3 from "@/assets/home/blog (3).png";
 
+export const ABOUT_US_DATA = {
+  heading:
+    "We'll take the time to understand your goals and then help you create a website that's exactly what you envisioned.",
+  sub_heading:
+    "We believe your project is only as good as the team that's working on it. When we work with you and your team, we know there are no shortcuts to success. Your research is done; now lets get down to business!",
+};
+
 export const BLOG_DATA = {
   title: "OUR Design BLOG",
   blogs: [
