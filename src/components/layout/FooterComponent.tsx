@@ -4,7 +4,7 @@ import LogoComponent from "@/components/ui/LogoComponent";
 import { Divider } from "@nextui-org/react";
 import React from "react";
 import {
-  FaArrowRight,
+  // FaArrowRight,
   FaDribbble,
   FaFacebookF,
   FaStar,
@@ -82,15 +82,15 @@ const FooterComponent = () => {
           <div className="space-y-8 flex-1">
             <h3 className="sub-heading-2">Subscribe</h3>
 
-            <form className="w-full flex flex-row items-center justify-center h-12 rounded-md overflow-hidden border border-gray-300">
+            {/* <form className="w-fit flex flex-row items-center justify-center h-12 rounded-md overflow-hidden border border-gray-300">
               <input
                 placeholder="Email address"
-                className="h-full w-auto border-none outline-none px-5"
+                className="h-full border-none outline-none px-5"
               />
               <button className="h-full px-5 text-light bg-[#7751F7]">
                 <FaArrowRight />
               </button>
-            </form>
+            </form> */}
 
             <div>
               <p className="sub-heading-3">8/10</p>
