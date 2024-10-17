@@ -1,5 +1,3 @@
-"use client";
-
 import React from "react";
 import TitleComponent from "@/components/common/TitleComponent";
 import Container from "@/components/common/Container";

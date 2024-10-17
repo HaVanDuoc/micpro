@@ -1,5 +1,3 @@
-"use client";
-
 import React from "react";
 import NavbarComponent from "@/components/layout/navbar/NavbarComponent";
 import HeroHomeComponent from "@/components/home/HeroHomeComponent";

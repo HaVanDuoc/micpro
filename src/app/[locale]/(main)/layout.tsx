@@ -1,5 +1,3 @@
-"use client";
-
 import FooterComponent from "@/components/layout/footer/FooterComponent";
 import HeaderContainer from "@/components/layout/header/HeaderContainer";
 import FloatingContainer from "@/components/ui/floating/FloatingContainer";

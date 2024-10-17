@@ -1,5 +1,3 @@
-"use client";
-
 import React from "react";
 import AnimationFadeUpComponent from "@/components/animation/AnimationFadeUpComponent";
 import Container from "@/components/common/Container";

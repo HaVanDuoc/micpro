@@ -1,5 +1,3 @@
-"use client";
-
 import React from "react";
 import { AGENCY_DATA } from "@/data/home";
 import TitleComponent from "@/components/common/TitleComponent";
