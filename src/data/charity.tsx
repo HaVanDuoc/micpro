@@ -4,6 +4,33 @@ import DONOR_3 from "@/assets/charity/donor (3).png";
 import DONOR_4 from "@/assets/charity/donor (4).png";
 import DONOR_5 from "@/assets/charity/donor (5).png";
 import DONOR_6 from "@/assets/charity/donor (6).png";
+import ARTICLES_1 from "@/assets/charity/volunteer-helping-with-donation-box 1.png";
+import ARTICLES_2 from "@/assets/charity/volunteer-helping-with-donation-box(1) 1.png";
+import ARTICLES_3 from "@/assets/charity/volunteers-holding-boxes-containing-donations-charity 1.png";
+
+export const Articles_DATA = {
+  title: "Latest News & Campaigns",
+  items: [
+    {
+      id: 1,
+      type: "Donation",
+      title: "Why Are Forest So Important For Earth?",
+      img: ARTICLES_1,
+    },
+    {
+      id: 2,
+      type: "Donation",
+      title: "What To Donate To A Food Bank & What To Avoid.",
+      img: ARTICLES_2,
+    },
+    {
+      id: 3,
+      type: "Donation",
+      title: "What To Donate To A Food Bank & What To Avoid.",
+      img: ARTICLES_3,
+    },
+  ],
+};
 
 export const Testimonial_DATA = {
   title: "We're here to help our Earth breathe again.",

@@ -2,17 +2,14 @@ import cn from "@/utils/tailwind-utils";
 import Image, { StaticImageData } from "next/image";
 import React from "react";
 
-const ImageComponent = ({
-  img,
-  alt,
-  width,
-  className,
-}: {
+interface Props {
   img: StaticImageData;
   alt: string;
   width?: string;
   className?: string;
-}) => {
+}
+
+const ImageComponent: React.FC<Props> = ({ img, alt, width, className }) => {
   return (
     <div
       className={cn("flex justify-center items-center", className)}

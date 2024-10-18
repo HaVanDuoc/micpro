@@ -8,6 +8,7 @@ interface ContainerProps extends React.HTMLAttributes<HTMLDivElement> {
   gap?: number;
   gapTitleContent?: boolean;
   title?: string;
+  animationFadeUp?: boolean;
 }
 
 const Container: React.FC<ContainerProps> = ({
