@@ -5,6 +5,18 @@ import DONOR_4 from "@/assets/charity/donor (4).png";
 import DONOR_5 from "@/assets/charity/donor (5).png";
 import DONOR_6 from "@/assets/charity/donor (6).png";
 
+export const BREATHE_DATA = {
+  title: "We're here to help our Earth breathe again.",
+  sub_title:
+    "Voluptatem accusantium doloremque laud totam rem aperiam, eaque ipsa quae ab illoaperiam, eaque ipsa quae.",
+  volunteers: [
+    { id: 1, name: "Collaborators", count: "254K" },
+    { id: 3, name: "Companies", count: "488K " },
+    { id: 4, name: "Human Impacted", count: "157K " },
+    { id: 5, name: "Assisted Communities", count: "325K" },
+  ],
+};
+
 export const TOP_DONORS_DATA = {
   title: "Top Donors",
   donors: [
