@@ -37,7 +37,7 @@ const config: Config = {
         dark: "#1f2326",
         primary: "#1663f9",
         "secondary-1": "#F961D8",
-        "secondary-2": "#F5953A#",
+        "secondary-2": "#F5953A",
         "secondary-3": "#3DB0E5",
         "secondary-4": "#FF7999",
         error: "#FC5230",

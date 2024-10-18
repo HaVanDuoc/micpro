@@ -6,6 +6,8 @@ interface ContainerProps extends React.HTMLAttributes<HTMLDivElement> {
   className?: string;
   marginY?: boolean;
   gap?: number;
+  gapTitleContent?: boolean;
+  title?: string;
 }
 
 const Container: React.FC<ContainerProps> = ({
@@ -13,6 +15,7 @@ const Container: React.FC<ContainerProps> = ({
   className = "",
   marginY = false,
   gap = 5,
+  gapTitleContent = false,
   ...props
 }) => {
   return (
@@ -22,6 +25,7 @@ const Container: React.FC<ContainerProps> = ({
         "container flex flex-col p-5",
         marginY && "my-10 sm:my-20",
         gap && `gap-${gap}`,
+        gapTitleContent && `gap-14 sm:gap-20`,
         className
       )}
     >

@@ -1,3 +1,22 @@
+import DONOR_1 from "@/assets/charity/donor (1).png";
+import DONOR_2 from "@/assets/charity/donor (2).png";
+import DONOR_3 from "@/assets/charity/donor (3).png";
+import DONOR_4 from "@/assets/charity/donor (4).png";
+import DONOR_5 from "@/assets/charity/donor (5).png";
+import DONOR_6 from "@/assets/charity/donor (6).png";
+
+export const TOP_DONORS_DATA = {
+  title: "Top Donors",
+  donors: [
+    { id: 1, name: "Micle James", avt: DONOR_1.src, volumes: "$1,225.00" },
+    { id: 2, name: "Micle James", avt: DONOR_2.src, volumes: "$1,225.00" },
+    { id: 3, name: "Micle James", avt: DONOR_3.src, volumes: "$1,225.00" },
+    { id: 4, name: "Micle James", avt: DONOR_4.src, volumes: "$1,225.00" },
+    { id: 5, name: "Micle James", avt: DONOR_5.src, volumes: "$1,225.00" },
+    { id: 6, name: "Micle James", avt: DONOR_6.src, volumes: "$1,225.00" },
+  ],
+};
+
 export const HELPING_DATA = {
   heading: "You can Help lots of people helping others.",
   heading_2: "We are here to support the vulnerable.",
