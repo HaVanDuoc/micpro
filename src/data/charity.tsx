@@ -5,6 +5,35 @@ import DONOR_4 from "@/assets/charity/donor (4).png";
 import DONOR_5 from "@/assets/charity/donor (5).png";
 import DONOR_6 from "@/assets/charity/donor (6).png";
 
+export const Testimonial_DATA = {
+  title: "We're here to help our Earth breathe again.",
+  sub_title:
+    "Voluptatem accusantium doloremque laud totam rem aperiam, eaque ipsa quae ab illoaperiam, eaque ipsa quae.",
+  testimonials: [
+    {
+      id: 1,
+      name: "Joe Root",
+      job: "Head of Design at AMA",
+      avt: DONOR_1.src,
+      tes: "I recently had to jump on 10+ different calls across eight different countries to find the right owner.",
+    },
+    {
+      id: 2,
+      name: "Billy Root",
+      job: "Web Designer at AMA",
+      avt: DONOR_2.src,
+      tes: "I recently had to jump on 10+ different calls across eight different countries to find the right.",
+    },
+    {
+      id: 3,
+      name: "Sarah Root",
+      job: "UI Designer at AMA",
+      avt: DONOR_3.src,
+      tes: "I recently had to jump on 10+ different calls across eight different countries to find the right owner.",
+    },
+  ],
+};
+
 export const BREATHE_DATA = {
   title: "We're here to help our Earth breathe again.",
   sub_title:

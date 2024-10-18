@@ -5,6 +5,7 @@ import HelpingSection from "@/components/charity/HelpingSection";
 import VideoSection from "@/components/charity/VideoSection";
 import TopDonorsSection from "@/components/charity/TopDonorsSection";
 import BreatheSection from "@/components/charity/BreatheSection";
+import TestimonialSection from "@/components/charity/TestimonialSection";
 
 const CharityPage = () => {
   return (
@@ -15,6 +16,7 @@ const CharityPage = () => {
       <VideoSection />
       <TopDonorsSection />
       <BreatheSection />
+      <TestimonialSection />
     </>
   );
 };
