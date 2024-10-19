@@ -5,6 +5,38 @@ import ORDER_1 from "@/assets/restaurant/order (4).png";
 import ORDER_2 from "@/assets/restaurant/order (3).png";
 import ORDER_3 from "@/assets/restaurant/order (2).png";
 import ORDER_4 from "@/assets/restaurant/order (1).png";
+import BLOG_FOOD_1 from "@/assets/restaurant/blog_food (1).png";
+import BLOG_FOOD_2 from "@/assets/restaurant/blog_food (2).png";
+import BLOG_FOOD_3 from "@/assets/restaurant/blog_food (3).png";
+
+export const BLOG_FOOD_DATA = {
+  title: "Our Food Blog",
+  sub: "Eat the food you dream about at affordable prices. No need to come to us just call is.",
+  button: {
+    name: "Learn More",
+    href: "#",
+  },
+  items: [
+    {
+      id: 1,
+      name: "How to make a rice bowl?",
+      des: "Lorem ipsum dolor sit amet, consectetur so adipiscing elit, sed do eiusmod tempor the incididunt ut labore",
+      img: BLOG_FOOD_1,
+    },
+    {
+      id: 2,
+      name: "Get the pizza of the week.",
+      des: "Lorem ipsum dolor sit amet, consectetur so adipiscing elit, sed do eiusmod tempor the incididunt ut labore",
+      img: BLOG_FOOD_2,
+    },
+    {
+      id: 3,
+      name: "Make your burger like this.",
+      des: "Lorem ipsum dolor sit amet, consectetur so adipiscing elit, sed do eiusmod tempor the incididunt ut labore",
+      img: BLOG_FOOD_3,
+    },
+  ],
+};
 
 export const OFFER_DATA = {
   title: "Get The Best Offer",

@@ -7,13 +7,20 @@ interface Props {
   img: StaticImageData;
   alt: string;
   width?: string;
+  heightFull?: boolean;
   className?: string;
 }
 
-const ImageComponent: React.FC<Props> = ({ img, alt, width, className }) => {
+const ImageComponent: React.FC<Props> = ({
+  img,
+  alt,
+  width,
+  heightFull,
+  className,
+}) => {
   return (
     <div
-      className={cn("flex justify-center items-center", className)}
+      className={cn("flex justify-center items-center", heightFull && "h-full w-full", className)}
       style={{
         width,
       }}
@@ -23,7 +30,7 @@ const ImageComponent: React.FC<Props> = ({ img, alt, width, className }) => {
         alt={utils.generateRandomAriaLabel(`${alt}__`)}
         width={img.width ?? 0}
         height={img.height ?? 0}
-        className="w-full h-auto object-cover"
+        className={cn("w-full h-auto object-cover", heightFull && "h-full")}
       />
     </div>
   );
