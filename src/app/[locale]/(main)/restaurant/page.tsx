@@ -5,6 +5,8 @@ import HeaderRestaurantComponent from "@/components/restaurant/HeaderRestaurantC
 import OrderedSection from "@/components/restaurant/OrderedSection";
 import OfferSection from "@/components/restaurant/OfferSection";
 import FoodBlogSection from "@/components/restaurant/FoodBlogSection";
+import ClientSaySection from "@/components/restaurant/ClientSaySection";
+import SubscribeSection from "@/components/restaurant/SubscribeSection";
 
 const RestaurantPage = () => {
   return (
@@ -15,6 +17,8 @@ const RestaurantPage = () => {
       <OrderedSection />
       <OfferSection />
       <FoodBlogSection />
+      <ClientSaySection />
+      <SubscribeSection />
     </>
   );
 };

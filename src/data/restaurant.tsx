@@ -8,6 +8,47 @@ import ORDER_4 from "@/assets/restaurant/order (1).png";
 import BLOG_FOOD_1 from "@/assets/restaurant/blog_food (1).png";
 import BLOG_FOOD_2 from "@/assets/restaurant/blog_food (2).png";
 import BLOG_FOOD_3 from "@/assets/restaurant/blog_food (3).png";
+import CLIENT_1 from "@/assets/restaurant/client (1).png";
+import CLIENT_2 from "@/assets/restaurant/client (2).png";
+
+export const CLIENT_SAY_DATA = {
+  title: "What Our Clients Say",
+  sub: "Here, We make almost every genre of applications. Your name it and we build it.",
+  items: [
+    {
+      id: 1,
+      name: "Yaron Shifman",
+      job: "CEO, Swathly Ltd",
+      avt: CLIENT_1,
+      say: "I’m very pleased with their work. When I need help with any aspect of development, I’m able to call on them to take care of it. They’re professional and complete tasks in a timely manner.",
+      rating: 5,
+    },
+    {
+      id: 2,
+      name: "Elmo Weber",
+      job: "Founder, Fair Friend ",
+      avt: CLIENT_2,
+      say: "Scopic has never let me down. I’m pleased with our partnership and they consistently develop reliable applications. They estimate a range of hours for each project and they manage it efficiently.",
+      rating: 5,
+    },
+    {
+      id: 3,
+      name: "Yaron Shifman",
+      job: "CEO, Swathly Ltd",
+      avt: CLIENT_1,
+      say: "I’m very pleased with their work. When I need help with any aspect of development, I’m able to call on them to take care of it. They’re professional and complete tasks in a timely manner.",
+      rating: 5,
+    },
+    {
+      id: 4,
+      name: "Elmo Weber",
+      job: "Founder, Fair Friend ",
+      avt: CLIENT_2,
+      say: "Scopic has never let me down. I’m pleased with our partnership and they consistently develop reliable applications. They estimate a range of hours for each project and they manage it efficiently.",
+      rating: 5,
+    },
+  ],
+};
 
 export const BLOG_FOOD_DATA = {
   title: "Our Food Blog",
