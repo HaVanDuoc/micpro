@@ -1,7 +1,45 @@
-
 import FOOD_1 from "@/assets/restaurant/food (1).png";
 import FOOD_2 from "@/assets/restaurant/food (2).png";
 import FOOD_3 from "@/assets/restaurant/food (3).png";
+import ORDER_1 from "@/assets/restaurant/order (4).png";
+import ORDER_2 from "@/assets/restaurant/order (3).png";
+import ORDER_3 from "@/assets/restaurant/order (2).png";
+import ORDER_4 from "@/assets/restaurant/order (1).png";
+
+export const OFFER_DATA = {
+  title: "Get The Best Offer",
+  sub_title:
+    " Eat the food you dream about at affordable prices. No need to come to us just call is.",
+  leftContent: {
+    img: ORDER_1,
+    text_1: "Lunch Time",
+    percent: 30,
+    text_2: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+  },
+  rightContent: [
+    {
+      id: 1,
+      name: "Spicy Club",
+      des: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiu.",
+      img: ORDER_2,
+      price: 42,
+    },
+    {
+      id: 2,
+      name: "Spicy Salad",
+      des: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiu.",
+      img: ORDER_3,
+      price: 42,
+    },
+    {
+      id: 3,
+      name: "Chicken Grill",
+      des: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiu.",
+      img: ORDER_4,
+      price: 42,
+    },
+  ],
+};
 
 export const STATS_DATA = [
   { id: 1, label: "Trusted Retails", value: "+20k" },
