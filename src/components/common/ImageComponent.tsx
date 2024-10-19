@@ -1,3 +1,4 @@
+import utils from "@/utils";
 import cn from "@/utils/tailwind-utils";
 import Image, { StaticImageData } from "next/image";
 import React from "react";
@@ -19,7 +20,7 @@ const ImageComponent: React.FC<Props> = ({ img, alt, width, className }) => {
     >
       <Image
         src={img.src}
-        alt={alt}
+        alt={utils.generateRandomAriaLabel(`${alt}__`)}
         width={img.width ?? 0}
         height={img.height ?? 0}
         className="w-full h-auto object-cover"
