@@ -2,6 +2,7 @@
 
 import LinkComponent from "@/components/common/LinkComponent";
 import TitleComponent from "@/components/common/TitleComponent";
+import cn from "@/utils/tailwind-utils";
 import {
   Dropdown,
   DropdownItem,
@@ -9,7 +10,7 @@ import {
   DropdownSection,
   DropdownTrigger,
 } from "@nextui-org/react";
-import { useParams, useRouter } from "next/navigation";
+import { useParams, usePathname, useRouter } from "next/navigation";
 import React from "react";
 import { IoIosArrowDown } from "react-icons/io";
 
@@ -34,6 +35,8 @@ const DropdownNavbarComponent: React.FC<DropdownNavbarComponentProps> = ({
   const { name, href, items } = data;
   const router = useRouter();
   const { locale } = useParams();
+  const pathName = usePathname();
+  const currentNav = pathName ===`/${locale}${href && "/" + href}`;
 
   return items && items?.length > 0 ? (
     <Dropdown
@@ -44,9 +47,7 @@ const DropdownNavbarComponent: React.FC<DropdownNavbarComponentProps> = ({
       }}
     >
       <DropdownTrigger>
-        <div
-          className="flex items-center cursor-pointer"
-        >
+        <div className="flex items-center cursor-pointer">
           <TitleComponent title={name} heading="sub-heading-2" />
           <IoIosArrowDown className="ml-2" />
         </div>
@@ -68,7 +69,21 @@ const DropdownNavbarComponent: React.FC<DropdownNavbarComponentProps> = ({
       </DropdownMenu>
     </Dropdown>
   ) : (
-    <LinkComponent href={href} className="sub-heading-2">{name}</LinkComponent>
+    <LinkComponent
+      href={href}
+      className={cn(
+        "sub-heading-2 capitalize relative",
+        currentNav && "text-primary"
+      )}
+    >
+      {name}
+      <div
+        className={cn(
+          "absolute  w-full h-1  rounded-full",
+          currentNav ? "bg-primary" : "bg-transparent"
+        )}
+      ></div>
+    </LinkComponent>
   );
 };
 
