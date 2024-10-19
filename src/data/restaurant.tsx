@@ -3,6 +3,12 @@ import FOOD_1 from "@/assets/restaurant/food (1).png";
 import FOOD_2 from "@/assets/restaurant/food (2).png";
 import FOOD_3 from "@/assets/restaurant/food (3).png";
 
+export const STATS_DATA = [
+  { id: 1, label: "Trusted Retails", value: "+20k" },
+  { id: 2, label: "Customers", value: "+50k" },
+  { id: 3, label: "Review", value: "+400k" },
+];
+
 export const Features_DATA = {
   title: "Our Special Features",
   sub_title:

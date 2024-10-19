@@ -13,6 +13,7 @@ interface ContainerProps extends React.HTMLAttributes<HTMLDivElement> {
   title?: string;
   animationFadeUp?: boolean;
   delay?: number;
+  fullWidth?: boolean
 }
 
 const Container: React.FC<ContainerProps> = ({
@@ -23,6 +24,7 @@ const Container: React.FC<ContainerProps> = ({
   gapTitleContent = false,
   animationFadeUp = false,
   delay = 0.1,
+  fullWidth = false,
   ...props
 }) => {
   const Wrapper = animationFadeUp ? motion.div : "div"; // Chọn motion.div nếu animationFadeUp là true
@@ -39,7 +41,8 @@ const Container: React.FC<ContainerProps> = ({
     >
       <section
         className={cn(
-          "container flex flex-col p-5",
+          "flex flex-col ",
+          fullWidth ? "max-w-full" : "container p-5",
           marginY && "my-10 sm:my-20",
           gap && `gap-${gap}`,
           gapTitleContent && `gap-14 sm:gap-20`,

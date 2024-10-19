@@ -1,3 +1,4 @@
+import StatsSection from "@/components/restaurant/StatsSection";
 import FeaturesSection from "@/components/restaurant/FeaturesSection";
 import HeaderRestaurantComponent from "@/components/restaurant/HeaderRestaurantComponent";
 import React from "react";
@@ -7,6 +8,7 @@ const RestaurantPage = () => {
     <>
       <HeaderRestaurantComponent />
       <FeaturesSection />
+      <StatsSection />
     </>
   );
 };
